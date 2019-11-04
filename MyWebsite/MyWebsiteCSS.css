@@ -1,0 +1,117 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+*
+{
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] 
+{
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body, html
+{
+	height: 100%;
+	color: #777;
+	/*line-height: 1.8;*/
+}
+
+body
+{
+	background-color: #ffd68c;
+}
+
+.backgroundImg
+{
+	background-image: url("kcPic.jpg");
+	min-height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img2
+{
+	background-image: url("treePic.jpg");
+	min-height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+
+.topnav
+{
+	/*background-color: #ff8563;*/
+	top: 0;
+	position: fixed;
+	/*top: auto;*/
+	/*border: ;*/
+	width: 100%;
+	transition: 0.6s
+	/*position: sticky;*/
+}
+.topNavWhenScroll
+{
+	position: fixed;
+	/*background-color: #ff8563;*/ /*Eventually have a background for the menu*/
+	/*border: 3px solid none;*/
+	top: 0;
+	width: 100%;
+	transition: 0.6s
+}
+
+ul
+{
+	list-style-type: none;
+	position: sticky;
+	/*top: 0;*/
+}
+
+li
+{
+	float: left;
+}
+
+li a
+{
+	text-decoration: none;
+	padding: 0px 46px;
+	/*border: 1px solid black;*/
+	color: white;		/*Color for the menu on top*/
+	/*background-color: red;*/
+}
+.aboutMe
+{
+	background-color: lightblue;
+}
